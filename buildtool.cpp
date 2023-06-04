@@ -31,8 +31,7 @@ BuildConfig readConfig(const std::string& filename) {
                     } else if (key == "outputFile") {
                         config.outputFile = value;
                     }
-                    // Add more configuration options parsing here as needed
-                }
+                           }
             }
         }
     }
