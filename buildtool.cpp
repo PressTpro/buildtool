@@ -39,6 +39,7 @@ BuildConfig readConfig(const std::string& filename) {
 }
 
 int main() {
+    // Reads build.inf file
     BuildConfig config = readConfig("build.inf");
 
     std::string command = config.compiler;
@@ -47,7 +48,7 @@ int main() {
     }
     command += " " + config.inputFile;
 
-    std::cout << "Running command: " << command << std::endl;
+    std::cout << "Buildtool 0.2 Alpha " << std::endl;
     std::system(command.c_str());
 
     return 0;
